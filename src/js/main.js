@@ -123,7 +123,7 @@ class Main {
 
 $(() => {
     var main = new Main();
-    $('#clear').click(() => {
+    $('#清除').click(() => {
         main.initialize();
     });
 });

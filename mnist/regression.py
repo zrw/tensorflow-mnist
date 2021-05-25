@@ -1,6 +1,8 @@
 import os
 import model
-import tensorflow as tf
+#import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 
 from tensorflow.examples.tutorials.mnist import input_data
 data = input_data.read_data_sets("/tmp/data/", one_hot=True)

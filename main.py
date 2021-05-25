@@ -1,7 +1,8 @@
 import numpy as np
-import tensorflow as tf
+#import tensorflow as tf
 from flask import Flask, jsonify, render_template, request
-
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 from mnist import model
 
 
